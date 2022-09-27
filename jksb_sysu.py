@@ -56,14 +56,14 @@ def jksb():
     log.get_logger().info("登录信息门户")
     driver.find_element_by_xpath('//*[@id="fm1"]/section[2]/input[4]').click()
 
-    time.sleep(4)
+    time.sleep(10)
 
     
     # 进入健康申报
     log.get_logger().info("进入健康申报页面")
     driver.get("http://jksb.sysu.edu.cn/infoplus/form/XNYQSB/start")
     # driver.find_element_by_xpath('//*[@id="topSideLink"]/div[1]/div[3]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div/div/ul/li[1]/div[1]').click()
-    time.sleep(4)
+    time.sleep(10)
 
     # 点击下一步
     log.get_logger().info("健康申报页面，点击下一步")
@@ -71,7 +71,7 @@ def jksb():
     step=5 #进入健康申报页面
 
 
-    time.sleep(4)
+    time.sleep(10)
     # 点击提交
     log.get_logger().info("提交健康申报")
     driver.find_element_by_xpath('//*[@id="form_command_bar"]/li[1]').click()
